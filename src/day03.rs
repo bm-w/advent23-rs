@@ -186,5 +186,5 @@ fn tests() {
 	assert_eq!(part1_impl(INPUT.parse::<Grid>().unwrap()), 4361);
 	assert_eq!(part1(), 509115);
 	assert_eq!(part2_impl(INPUT.parse::<Grid>().unwrap()), 467835);
-	assert_eq!(part2(), 0);
+	assert_eq!(part2(), 75220503);
 }
