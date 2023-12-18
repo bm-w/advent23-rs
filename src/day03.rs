@@ -1,7 +1,5 @@
 // Copyright (c) 2023 Bastiaan Marinus van de Weerd
 
-use std::collections::HashMap;
-
 
 #[derive(Clone, Copy)]
 enum Space {
@@ -92,6 +90,8 @@ pub(crate) fn part1() -> u64 {
 
 
 fn part2_impl(input_grid: Grid) -> u64 {
+	use std::collections::HashMap;
+
 	let mut acc = 0;
 	let mut part_numbers = HashMap::<usize, u64>::with_capacity(8);
 
