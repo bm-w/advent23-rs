@@ -42,9 +42,7 @@ fn part2_impl(input_cards: impl Iterator<Item = Card>) -> usize {
 
 	for i in 0..input_cards_counts.len() {
 		let &(ref card, count) = &input_cards_counts[i];
-		println!("{} ({count}): {}", card.id, card.matches());
 		for k in i + 1..(i + card.matches() + 1).min(input_cards_counts.len()) {
-			dbg!(k);
 			input_cards_counts[k].1 += count;
 		}
 	}
